@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Expressions" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" variant="standard" name="firstName" label="First Name :" placeholder="First Name" value={firstName} onchange={handleChange}></lightning-input>
+            <lightning-input type="text" variant="standard" name="lastName" label="Last Name" placeholder="Last Name" value={lastName} onchange={handleChange}></lightning-input>
+            <p class="slds-m-top_medium">
+                Uppercased fullname is : {uppercaseFullName}
+            </p>
+        </div>
+
+    </lightning-card>
+</template>

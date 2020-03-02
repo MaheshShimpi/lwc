@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  title="Hello" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <lightning-input type="checkbox" variant="standard" name="name" label="SHow Details" placeholder="type here..." onchange={handleChange}></lightning-input>
+            <div class="slds-m-vertical_medium">
+                <template if:true={showDetails} >
+                    <p>These are the details.</p>
+                </template>
+                <template if:false={showDetails}>
+                    Details are hidden now.
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

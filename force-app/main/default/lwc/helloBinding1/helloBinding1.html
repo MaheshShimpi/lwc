@@ -1,0 +1,8 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <p>Hello {greeting} !</p>
+            <lightning-input type="text" variant="standard" name="name" label="Enter any word " placeholder="Enter the value" value={greeting} onchange={handleChange}></lightning-input>
+        </div>
+    </lightning-card>
+</template>
